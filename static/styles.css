@@ -1,39 +1,118 @@
-html{
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+html {
     scroll-behavior: smooth;
-} 
-*{
+}
+
+body {
+    background-color: black;
+}
+
+* {
     margin: 0;
     padding: 0;
 }
-/* navbar section start */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
 
-.a{
-font-family: "Baloo Bhai 2", sans-serif;
-display: flex;
-justify-content: space-between;
-font-weight:bolder;
-padding-top: 20px;
-background-color: #5e5231;
+/* navbar section start */
+.a {
+    font-family: "Baloo Bhai 2", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bolder;
+    padding-top: 20px;
+    background-color: #0b0d1d;
+    position: sticky;
 }
+
 ul li a {
     text-decoration: none;
-    color: #c7ae6a;
+    color: #fafaf9;
 }
-ul li a:hover{
-    color: #918b7d;
+
+ul li a:hover {
+    color: #a8575b;
 }
+
 ul {
     list-style: none;
     display: flex;
     gap: 30px;
-    padding-top: 20px;
-    margin-right: 8px;
+    padding-top: 35px;
+    margin-right: 18px;
 }
-.a img{
-  height: 70px;
-  padding-bottom: 12px;
-  margin-left: 10px;
+
+.a img {
+    height: 93px;
+    width: 110px;
+    padding-bottom: 12px;
+    margin-left: 20px;
 }
+
 /* navbar section end */
 
+/* hero section start */
+.hero {
+    background-image: url(/static/images/web\ gym\ back\ photo.jpeg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+}
+
+.hero .box {
+    height: 80vh;
+    width: 100%;
+    opacity: 0.68;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+.content {
+    font-family: "Baloo Bhai 2", sans-serif;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: #fcfbfac9;
+    font-weight: bold;
+    padding-top: 160px;
+    font-size: 14px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.content:hover {
+    color: #e7e0cc;
+}
+
+.unleash {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    font-weight: 1500;
+    padding-bottom: 12px;
+}
+
+.unleash:hover {
+    color: antiquewhite;
+}
+
+.btn {
+    font-family: "Baloo Bhai 2", sans-serif;
+    background-color: red;
+    border-radius: 29px;
+    margin-top: 25px;
+    height: 3rem;
+    width: 6rem;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(15, 14, 14);
+}
+
+.btn:hover {
+    color: rgb(240, 241, 248);
+}

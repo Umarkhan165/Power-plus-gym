@@ -4,62 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POWER PLUS GYM</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/static/styles.css">
 </head>
-<style>
-    html{
-    scroll-behavior: smooth;
-} 
-*{
-    margin: 0;
-    padding: 0;
-}
-/* navbar section start */
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
-
-.a{
-font-family: "Baloo Bhai 2", sans-serif;
-display: flex;
-justify-content: space-between;
-font-weight:bolder;
-padding-top: 20px;
-background-color: #5e5231;
-}
-ul li a {
-    text-decoration: none;
-    color: #c7ae6a;
-}
-ul li a:hover{
-    color: #918b7d;
-}
-ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-    padding-top: 20px;
-    margin-right: 8px;
-}
-.a img{
-  height: 70px;
-  padding-bottom: 12px;
-  margin-left: 10px;
-}
-</style>
 <body>
-    <header>
+    <!-- navbar section start -->
             <nav class="a">
-                <div class="logo">
-                 <img src="/static/images/web logo.PNG" width="100px" height="50px">
-                 </div>
+                <img src="/static/images/Fitness (1).png" alt="">
                 <ul>
                     <li ><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#membership plans">Membership Plans</a></li>
                     <li><a href="#contact us">Contact Us</a></li>
                     <li><a href="{{url_for('login')}}">Login</a></li>
                     <li><a href="{{url_for('register')}}">Register</a></li>
                 </ul>
             </nav> 
-    </header>
+<!-- naavbar section end -->
+
+<!-- hero section start -->
+    <section class="hero">
+       <main class="box"></main>
+       <div class="content">
+        <span class="unleash">Unleash Your Potential</span>
+        <span>WELCOME TO PLACE OF HOPE AND FITNESS </span>
+        <span>POWER PLUS GYM</span>
+        <span>DREAM IT BELIEVE IT AND ACHIEVE IT</span>
+        <button class="btn">Join Now</button>
+       </div>
+       <!-- <input type="text" placeholder="Enter Your Email"> -->
+       
+    </section>
 </body>
 </html>
