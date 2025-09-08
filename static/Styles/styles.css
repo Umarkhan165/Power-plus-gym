@@ -1,0 +1,39 @@
+html{
+    scroll-behavior: smooth;
+} 
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navbar section start */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&display=swap');
+
+.a{
+font-family: "Baloo Bhai 2", sans-serif;
+display: flex;
+justify-content: space-between;
+font-weight:bolder;
+padding-top: 20px;
+background-color: #5e5231;
+}
+ul li a {
+    text-decoration: none;
+    color: #c7ae6a;
+}
+ul li a:hover{
+    color: #918b7d;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding-top: 20px;
+    margin-right: 8px;
+}
+.a img{
+  height: 70px;
+  padding-bottom: 12px;
+  margin-left: 10px;
+}
+/* navbar section end */
+
