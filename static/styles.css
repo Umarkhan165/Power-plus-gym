@@ -21,16 +21,29 @@ body {
     font-weight: bolder;
     padding-top: 20px;
     background-color: #0b0d1d;
-    position: sticky;
 }
-
 ul li a {
     text-decoration: none;
     color: #fafaf9;
+    position: relative;  
 }
 
+ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;   
+    width: 0%;
+    height: 2px;
+    background: #a8575b;
+    transition: 0.3s ease;
+}
+
+ul li a:hover::after {
+    width: 100%;   
+}
 ul li a:hover {
-    color: #a8575b;
+color: #a8575b;
 }
 
 ul {
@@ -413,4 +426,5 @@ p {
   font-size: 0.85rem;
   color: #aaa;
 }
+/* footer end */
 
