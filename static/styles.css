@@ -1,5 +1,63 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+/* Login and Registration Page Styles */
 
+/* Login and Registration Page Styles */
+
+.login-reg-body {
+    background-color: #1a1a1a;
+}
+
+.container-login-reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 7px;
+}
+
+.login-register-card {
+    width: 100%;
+    max-width: 650px;
+    background-color: #000000;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    color: white;
+    transition: box-shadow 0.3s ease;
+}
+
+.login-register-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.login-register-card h2 {
+    font-family: "Baloo Bhai 2", sans-serif;
+    color: #a8575b;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.login-register-card form label,
+.login-register-card form input {
+    font-family: "Baloo Bhai 2", sans-serif;
+    color: white;
+}
+
+.login-register-card .btn {
+    width: 100%;
+    margin-top: 0.5rem;
+    background-color: #6b0f14; /* Using a consistent accent color */
+    border: none;
+    color: white;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-register-card .btn:hover {
+    background-color: #ac1a21;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -13,26 +71,34 @@ body {
     padding: 0;
 }
 
-/* navbar section start */
 .a {
     font-family: "Baloo Bhai 2", sans-serif;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-weight: bolder;
-    padding-top: 20px;
-    background-color: #0b0d1d;
+    background-color: #000000;
+    padding: 5px 5px;
 }
+
+.a h2 {
+    color: white;
+    margin-right: auto;
+    margin-left: 15px;
+    font-size: 24px;
+}
+
 ul li a {
     text-decoration: none;
     color: #fafaf9;
-    position: relative;  
+    position: relative;
 }
 
 ul li a::after {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -5px;   
+    bottom: -5px;
     width: 0%;
     height: 2px;
     background: #a8575b;
@@ -40,32 +106,34 @@ ul li a::after {
 }
 
 ul li a:hover::after {
-    width: 100%;   
+    width: 100%;
 }
+
 ul li a:hover {
-color: #a8575b;
+    color: #a8575b;
 }
 
 ul {
     list-style: none;
     display: flex;
     gap: 30px;
-    padding-top: 35px;
     margin-right: 18px;
+    align-items: center;
 }
-ul li a{
+
+ul li a {
     font-size: 19px;
 }
+
 .a img {
-    height: 93px;
-    width: 110px;
-    padding-bottom: 12px;
+    height: 53px;
+    width: 53px;
+    padding-bottom: 0px;
+    padding-top: 2px;
     margin-left: 20px;
 }
 
-/* navbar section end */
 
-/* hero section start */
 .hero {
     background-image: url(/static/images/web\ gym\ back\ photo.jpeg);
     background-position: center center;
@@ -116,7 +184,7 @@ ul li a{
     color: antiquewhite;
 }
 
-.btn {
+/* .btn {
     font-family: "Baloo Bhai 2", sans-serif;
     background-color: red;
     border-radius: 29px;
@@ -132,8 +200,27 @@ ul li a{
 
 .btn:hover {
     color: rgb(13, 13, 14);
+} */
+.btn {
+    font-family: "Baloo Bhai 2", sans-serif;
+    background-color: red;
+    border-radius: 29px;
+    margin-top: 25px;
+    height: 3rem;
+    width: 6rem;
+    cursor: pointer;
+    border: 2px solid white; /* Added this line */
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(241, 236, 236);
+    transition: all 0.3s ease; /* Added this line for smooth hover effect */
 }
 
+.btn:hover {
+    background-color: #e03e00; /* A slightly darker red on hover */
+    color: white; /* Keeping the text color white */
+    transform: scale(1.05); /* A slight scaling effect on hover */
+}
 p {
     color: white;
 }
@@ -148,7 +235,7 @@ p {
     max-width: 1200px;
     margin: auto;
     flex-wrap: wrap;
-    /* responsive */
+    
 }
 
 .about-image {
@@ -200,19 +287,17 @@ p {
 /* about section end */
 
 /* membership section start */
-.membership{
+.membership {
     padding: 60px 20px;
     text-align: center;
-    background-color: #292828;
+    background-color: #1a1919;
 }
-
-.membership h2{
+.membership h2 {
     font-family: "Baloo Bhai 2", sans-serif;
     color: white;
     font-size: 2.2rem;
     font-weight: bold;
     margin-bottom: 40px;
-
 }
 .plancards {
     font-family: "Baloo Bhai 2", sans-serif;
@@ -221,55 +306,108 @@ p {
     flex-wrap: wrap;
     justify-content: center;
 }
-.plan{
+.plan {
     flex: 1 1 300px;
-    background-color: #524949f6;
+    background-color: #333030f6;
     border-radius: 15px;
-    transition: 0.3s;
+    transition: all 0.4s ease-in-out;
+    position: relative;
 }
-.plan:hover{
+.plan:hover {
     transform: translateY(-20px);
-    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0, 2);
+    border: 2px solid red;
+    z-index: 2;
 }
-.plan h3{
+.plancards:hover .plan {
+    filter: blur(3px);
+    opacity: 0.6;
+    transform: scale(0.95);
+}
+.plancards .plan:hover {
+    filter: none;
+    opacity: 1;
+    transform: translateY(-20px) scale(1.05px);
+}
+.plan h3 {
     font-family: "Baloo Bhai 2", sans-serif;
     font-size: 1.5rem;
     color: white;
     margin-bottom: 10px;
 }
-.price{
+.price {
     font-size: 1.2rem;
-    color: rgb(231, 198, 198);
+    color: rgb(212, 40, 40);
     margin-bottom: 15px;
     text-decoration: underline;
 }
-.price ul{
+.price ul {
     font-family: "Baloo Bhai 2", sans-serif;
     list-style: none;
     margin-bottom: 20px;
 }
-.plan ul li{
+.plan ul li {
     font-family: "Baloo Bhai 2", sans-serif;
     margin: 8px 0px;
     color: white;
 }
-.btn{
+.btn {
     margin-bottom: 20px;
+} ye membership section poora hai wo wala cut kerke ye same paste ker dena
+.btn {
+    font-family: "Baloo Bhai 2", sans-serif;
+    background-color: red;
+    border-radius: 29px;
+    margin-top: 25px;
+    height: 3rem;
+    width: 6rem;
+    cursor: pointer;
+    border: 2px solid white; /* Added this line */
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(241, 236, 236);
+    transition: all 0.3s ease; /* Added this line for smooth hover effect */
+}
+
+.btn:hover {
+    background-color: #e03e00; /* A slightly darker red on hover */
+    color: white; /* Keeping the text color white */
+    transform: scale(1.05); /* A slight scaling effect on hover */
 }
 /* membership section end */
 
 /* gallery section start */
-.gallery{
+.gallery {
     padding: 50px 20px;
-    background-color: rgb(44, 44, 58);
+    background-color: rgb(29, 29, 36);
 }
-.gallery h2{
+.gallery h2 {
     font-family: "Baloo Bhai 2", sans-serif;
     text-align: center;
     color: white;
     font-size: 2rem;
     margin-bottom: 20px;
 }
+.images {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+.images::-webkit-scrollbar {
+    display: none;
+}
+.gallery img {
+    width: 270px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 14px;
+    flex-shrink: 0;
+    transition: 0.4s;
+}
+.gallery img:hover {
+    transform: scale(1.10);
+} 
 .images{
     display: flex;
     gap: 15px;
@@ -278,7 +416,7 @@ p {
     padding: 10px;
 }
 .images::-webkit-scrollbar{
-    display: none;
+    display:grid;
 }
 .gallery img{
     width: 250px;
@@ -297,7 +435,7 @@ p {
 .trainer{
     padding: 50px 20px;
     text-align: center;
-    background-color: #292020;
+    background-color:  #000000;
 
 }
 .trainer h2{
@@ -313,7 +451,7 @@ p {
     flex-wrap: wrap;
 }
 .coach{
-    background-color: #443a3ae0;
+    background-color:  #0f1019;
     border-radius: 19px;
     padding: 5px;
     width: 250px;
@@ -356,13 +494,13 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 30px;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
 }
 
 .footer-section {
   flex: 1;
-  min-width: 220px;
+  min-width: 100px;
 }
 
 .footer-section h3, h4 {
@@ -377,7 +515,7 @@ p {
 }
 
 .footer-section ul {
-  list-style: none;
+  list-style:none;
   padding: 0;
 }
 
@@ -421,8 +559,8 @@ p {
 .footer-bottom {
   text-align: center;
   border-top: 1px solid #333;
-  margin-top: 30px;
-  padding-top: 10px;
+  margin-top: 10px;
+  padding-top: 5px;
   font-size: 0.85rem;
   color: #aaa;
 }

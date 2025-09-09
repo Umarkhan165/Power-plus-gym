@@ -88,6 +88,8 @@ def register():
         return redirect(url_for('login'))
     
     return render_template('register.html', form=form)
-
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
 if __name__ == '__main__':
     app.run(debug=True)
