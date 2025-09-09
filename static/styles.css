@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -39,7 +40,9 @@ ul {
     padding-top: 35px;
     margin-right: 18px;
 }
-
+ul li a{
+    font-size: 19px;
+}
 .a img {
     height: 93px;
     width: 110px;
@@ -62,7 +65,7 @@ ul {
 .hero .box {
     height: 80vh;
     width: 100%;
-    opacity: 0.68;
+    opacity: 0.58;
     background-color: black;
     position: absolute;
     top: 0;
@@ -90,9 +93,9 @@ ul {
 }
 
 .unleash {
-    font-size: 30px;
+    font-size: 40px;
     color: rgb(255, 255, 255);
-    font-weight: 1500;
+    font-weight: bolder;
     padding-bottom: 12px;
 }
 
@@ -108,14 +111,306 @@ ul {
     height: 3rem;
     width: 6rem;
     cursor: pointer;
+    border: 1px solid white;
     font-size: 18px;
     font-weight: bolder;
-    color: rgb(15, 14, 14);
+    color: rgb(241, 236, 236);
 }
 
 .btn:hover {
-    color: rgb(240, 241, 248);
+    color: rgb(13, 13, 14);
 }
-p{
+
+p {
     color: white;
 }
+
+/* about section start */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+    /* responsive */
+}
+
+.about-image {
+    flex: 1 1 400px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0, 2);
+}
+
+.about-text {
+    flex: 1 1 400px;
+}
+
+.about-text h2 {
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-size: 2.2rem;
+    margin-bottom: 18px;
+    color: #f7ecec;
+}
+
+.about-text p {
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #d4d2d2;
+}
+
+.about-text .btn {
+    font-family: "Baloo Bhai 2", sans-serif;
+    background-color: red;
+    border-radius: 29px;
+    margin-top: 25px;
+    height: 3rem;
+    width: 6rem;
+    cursor: pointer;
+    border: 1px solid white;
+    font-size: 18px;
+    font-weight: bolder;
+    color: rgb(241, 236, 236);
+}
+
+.btn:hover {
+    color: rgb(13, 13, 14);
+}
+/* about section end */
+
+/* membership section start */
+.membership{
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #292828;
+}
+
+.membership h2{
+    font-family: "Baloo Bhai 2", sans-serif;
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+
+}
+.plancards {
+    font-family: "Baloo Bhai 2", sans-serif;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.plan{
+    flex: 1 1 300px;
+    background-color: #524949f6;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.plan:hover{
+    transform: translateY(-20px);
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0, 2);
+}
+.plan h3{
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+.price{
+    font-size: 1.2rem;
+    color: rgb(231, 198, 198);
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+.price ul{
+    font-family: "Baloo Bhai 2", sans-serif;
+    list-style: none;
+    margin-bottom: 20px;
+}
+.plan ul li{
+    font-family: "Baloo Bhai 2", sans-serif;
+    margin: 8px 0px;
+    color: white;
+}
+.btn{
+    margin-bottom: 20px;
+}
+/* membership section end */
+
+/* gallery section start */
+.gallery{
+    padding: 50px 20px;
+    background-color: rgb(44, 44, 58);
+}
+.gallery h2{
+    font-family: "Baloo Bhai 2", sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.images{
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+.images::-webkit-scrollbar{
+    display: none;
+}
+.gallery img{
+    width: 250px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 14px;
+    flex-shrink: 0;
+    transition: 0.4s;
+}
+.gallery img:hover{
+    transform: scale(1.10);
+}
+/* gallery section end */
+
+/* trainer section start */
+.trainer{
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #292020;
+
+}
+.trainer h2{
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: white;
+}
+.train{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.coach{
+    background-color: #443a3ae0;
+    border-radius: 19px;
+    padding: 5px;
+    width: 250px;
+    transition: transform 0.3s;
+    box-shadow:  0px 4px 8px rgba(0, 0, 0, 0, 1);
+}
+.coach img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.coach :hover{
+    transform: translateY(-10px);
+}
+.coach h3{
+    font-family: "Baloo Bhai 2", sans-serif;
+    color: white;
+    font-size: 1.2rem;
+    margin: 10px 0 5px;
+}
+.coach p{
+    font-family: "Baloo Bhai 2", sans-serif;
+    font-size: 0.9rem;
+    color: #dddcd9;
+}
+/* trainer section end */
+
+/* footer section start */
+.footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-section h3, h4 {
+  margin-bottom: 15px;
+  color: #f39c12; 
+}
+
+.footer-section p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin: 8px 0;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 8px 0;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #f39c12;
+}
+
+.whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #25D366;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.whatsapp img {
+  width: 20px;
+  height: 20px;
+}
+
+.whatsapp:hover {
+  background: #1ebe5d;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 10px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
